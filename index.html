@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Read Books</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="maintitle">My Books</h1>
+
+  <!-- Form for adding books -->
+  <div id="addingform">
+    <form id="book-form">
+      <h3 id="form-title">Add a book</h3>
+      <label for="title">Title:</label>
+      <input type="text" id="title" required>
+      <label for="author">Author:</label>
+      <input type="text" id="author" required>
+      <label for="year">Year:</label>
+      <input type="number" id="year" required>
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" required>
+      <label for="pages">Pages:</label>
+      <input type="number" id="pages" required>
+      <label for="readingdate">Reading Date:</label>
+      <input type="date" id="readingdate" required>
+      <label for="review">Review:</label>
+      <input type="text" id="review">
+      <label for="cover">Cover Image:</label>
+      <input type="file" id="cover" accept="image/*">
+      <button type="submit" id="addbookbutton">Add Book</button>
+    </form>
+  </div>
+
+  <!-- Counter for books -->
+  <h3 id="book-counter">Total Books Read: 0</h3>
+  <h2 id="books">Books</h2>
+  <div id="book-list"></div>
+
+  <!-- Pop-up window for editing books -->
+  <div id="book-popup" class="popup-window">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h2>Edit Book</h2>
+      <label for="edit-title">Title:</label>
+      <input type="text" id="edit-title">
+      <label for="edit-author">Author:</label>
+      <input type="text" id="edit-author">
+      <label for="edit-year">Year:</label>
+      <input type="number" id="edit-year">
+      <label for="edit-genre">Genre:</label>
+      <input type="text" id="edit-genre">
+      <label for="edit-pages">Pages:</label>
+      <input type="number" id="edit-pages">
+      <label for="edit-readingdate">Reading Date:</label>
+      <input type="date" id="edit-readingdate">
+      <label for="edit-review">Review:</label>
+      <input type="text" id="edit-review">
+      <button id="save-changes">Save Changes</button>
+      <button id="delete-book">Delete Book</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
