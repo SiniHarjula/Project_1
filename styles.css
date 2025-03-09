@@ -5,11 +5,11 @@
 body {
   background: linear-gradient(to right, #7446a5, #f6dcfc); 
   display: flex;
-  flex-direction: column; /* Asettaa elementit pystysuunnassa */
-  align-items: center; /* Pitää kaiken keskitettynä vaakasuunnassa */
+  flex-direction: column; 
+  align-items: center; 
   height: 100vh;
   margin: 0;
-  padding-top: 20px; /* Lisää tilaa yläreunaan */
+  padding-top: 20px; 
 }
 
 #form-title {
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Lisää vähän tilaa otsikon ja lomakkeen väliin */
+  margin-top: 20px; 
 }
 
 form {
@@ -46,8 +46,8 @@ input[type=date] {
   padding: 5px;
   border-radius: 20px;
   border: none;
-  background-color: #f9f9f9; /* Taustaväri */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hieman varjoa kenttien ympärille */
+  background-color: #f9f9f9; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 label {
@@ -55,37 +55,37 @@ label {
 }
 
 #addbookbutton {
-  width: 100%; /* Täyttää koko leveysalueen */
-  padding: 10px; /* Lisää tilaa napin ympärille */
-  margin-top: 20px; /* Väli muihin kenttiin */
-  font-size: 16px; /* Määrittele fonttikoko */
-  background-color: #817be7; /* Taustaväri */
-  color: white; /* Tekstin väri */
-  border: none; /* Poistaa reunukset */
-  border-radius: 20px; /* Pyöristetyt kulmat */
-  cursor: pointer; /* Näyttää käden osoittimen hiirellä */
-  transition: background-color 0.5s ease; /* Sujuva värimuutos */
+  width: 100%; 
+  padding: 10px; 
+  margin-top: 20px; 
+  font-size: 16px; 
+  background-color: #817be7; 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  transition: background-color 0.5s ease; 
 }
 
 #addbookbutton:hover {
-  background-color: #4e44d7; /* Tummempi väri hover-tilassa */
+  background-color: #4e44d7; 
 }
 
 
 #book-list {
-  display: flex;  /* Käytetään flexboxia */
-  flex-wrap: wrap; /* Sallitaan elementtien siirtyminen seuraavalle riville, jos tilaa ei ole */
-  gap: 20px; /* Lisää väliä kirjojen väliin */
-  justify-content: flex-start; /* Asetetaan aloituskohta vasemmalle */
-  padding-bottom: 50px; /* Lisää tilaa kirjojen ja sivun alareunan väliin */
+  display: flex;  
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: flex-start; 
+  padding-bottom: 50px; 
 }
 
 .book-item {
-  width: 220px;  /* Asetetaan kirjan elementille tietty leveys */
+  width: 220px;  
   padding: 15px;
   background-color: rgb(214, 198, 253);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lisätään varjoa kirjoille */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -133,7 +133,7 @@ label {
   align-items: center;
 }
 
-/* Pop-up-ikkunan sisältö */
+
 .popup-content {
   background-color: rgb(223, 192, 238);
   padding: 20px;
@@ -146,24 +146,24 @@ label {
   align-items: center;
 }
 
-/* Lisää väliä tekstien ja kenttien väliin */
+
 .popup-content label {
   font-weight: bold;
-  margin-top: 15px; /* Lisää väliä ennen jokaista labelia */
+  margin-top: 15px; 
   display: block;
 }
 
 .popup-content input {
-  width: 90%; /* Tee kentistä leveämpiä */
+  width: 90%; 
   padding: 8px;
-  margin-top: 5px; /* Lisää väliä labelin ja kentän väliin */
+  margin-top: 5px; 
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-/* Lisää väliä painikkeeseen */
+
 #save-changes {
-  margin-top: 20px; /* Lisää iso väli ennen tallenna-painiketta */
+  margin-top: 20px; 
   padding: 10px;
   font-size: 16px;
   background-color: #2e9b46;
@@ -179,7 +179,7 @@ label {
 }
 
 #delete-book {
-  margin-top: 10px; /* Lisää väliä edellisen napin jälkeen */
+  margin-top: 10px; 
   padding: 10px;
   font-size: 16px;
   background-color: red;
